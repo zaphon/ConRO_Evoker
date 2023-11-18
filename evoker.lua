@@ -114,7 +114,7 @@ function ConRO.Evoker.Under60(_, timeShift, currentSpell, gcd, tChosen, pvpChose
 --Conditions
 	local _is_moving 																															= ConRO:PlayerSpeed();
 	local _enemies_in_melee, _target_in_melee																			= ConRO:Targets("Melee");
-	local _target_in_10yrds 																											= CheckInteractDistance("target", 3);
+	local _target_in_10yrds 																											= ConRO:CheckInteractDistance("target", 3);
 
 --Warnings
 
@@ -147,7 +147,7 @@ function ConRO.Evoker.Under60Def(_, timeShift, currentSpell, gcd, tChosen, pvpCh
 --Conditions
 	local _is_moving 																															= ConRO:PlayerSpeed();
 	local _enemies_in_melee, _target_in_melee																			= ConRO:Targets("Melee");
-	local _target_in_10yrds 																											= CheckInteractDistance("target", 3);
+	local _target_in_10yrds 																											= ConRO:CheckInteractDistance("target", 3);
 
 --Warnings
 
@@ -366,7 +366,7 @@ function ConRO.Evoker.DevastationDef(_, timeShift, currentSpell, gcd, tChosen, p
 --Conditions
 	local _is_moving = ConRO:PlayerSpeed();
 	local _enemies_in_melee, _target_in_melee = ConRO:Targets("Melee");
-	local _target_in_10yrds = CheckInteractDistance("target", 3);
+	local _target_in_10yrds = ConRO:CheckInteractDistance("target", 3);
 
 --Rotations
 	if _ObsidianScales_RDY then
@@ -492,7 +492,7 @@ function ConRO.Evoker.PreservationDef(_, timeShift, currentSpell, gcd, tChosen, 
 --Conditions
 	local _is_moving = ConRO:PlayerSpeed();
 	local _enemies_in_melee, _target_in_melee = ConRO:Targets("Melee");
-	local _target_in_10yrds = CheckInteractDistance("target", 3);
+	local _target_in_10yrds = ConRO:CheckInteractDistance("target", 3);
 
 --Rotations
 	if _ObsidianScales_RDY then
